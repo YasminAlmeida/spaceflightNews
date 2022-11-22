@@ -1,12 +1,11 @@
 import Header from './components/header'
-import News from './components/news'
-
+import PageNews from './view/pageNews'
 import * as S from './styles/styleApi'
 const App = ()=> {
   return (
     <S.Container>
       <Header />
-      <News />
+      <PageNews />
     </S.Container>
   );
 }
