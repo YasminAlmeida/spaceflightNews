@@ -1,19 +1,53 @@
 import styled from "styled-components";
 
 export const NewsContainer = styled.section`
-  font-family: -apple-system,"Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  padding: 10px;
+  margin-top: 10px;
 `
 export const NewsItem = styled.article`
-`
-export const NewsTitle = styled.h2``
-
-export const NewsDescription = styled.p``
-
-export const NewsImage = styled.img`
-border-radius: 2rem;
+  display: grid;
+  background-color: #f8f9fa;
+  margin-bottom: 20px;
+  border-radius: 2rem; grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
   @media (max-width: 768px) {
-    width: 100%;
-    
+    grid-template-columns: 1fr;
   }
 `
+export const ContainerInformation = styled.div`
+  padding: 10px;
+`
+export const NewsTitle = styled.h2`
+  font-size: 1.2rem;
+`
+
+export const NewsDescription = styled.p`
+  @media (max-width: 768px) {
+    font-size: .8rem;
+  }
+`
+
+export const NewsImage = styled.img`
+  border-radius: 2rem;
+  width: 80%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`
+export const ContainerExtra = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
 export const Data = styled.span``
+export const BtnReadMore = styled.a`
+  text-decoration: none;
+  background-color: #dee2e6;
+  color: #000;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 2rem;
+  @media (max-width: 768px) {
+    font-size: .8rem;
+  }
+`

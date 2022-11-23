@@ -5,8 +5,13 @@ const axiosInstance = axios.create({
 });
 
 export const api = {
-  getAllArticles: async() => {
-    let response = await axiosInstance.get('/articles');
+  getAllArticles: async(_limit:number) => {
+    let response = await axiosInstance.get('/articles', {
+
+      params: {
+        _limit: _limit,
+      }
+    });
     return response.data;
   },
 }
