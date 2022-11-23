@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const NewsContainer = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
+  margin-bottom: 20px;
 `
 export const Title = styled.h1`
   font-size: 2rem;
@@ -17,4 +18,7 @@ export const BtnLoadMore = styled.button`
   border-radius: 2rem;
   font-weight: bold;
   cursor: pointer;
+`
+export const Loading = styled.div`
+  display: flex;
 `
