@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const NewsContainer = styled.section`
   padding: 10px;
   margin-top: 10px;
+  max-width: 1500px;
+  align-items: center;
 `
 export const NewsItem = styled.article`
   display: grid;

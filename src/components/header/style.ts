@@ -21,5 +21,25 @@ export const Title = styled.h1`
   font-size: 1.2rem;
   color: #000;
   margin-right: 5px;
-  
+`
+
+export const Navigation = styled.ul`
+  list-style: none;
+  display: flex;
+`
+
+export const List = styled.li`
+ padding: 0 10px;
+ font-size: 1.1rem;
+
+  a{
+    text-decoration: none; 
+    color: #000;
+    display: inline-block;
+    position: relative;
+  }
+`
+export const RightSide = styled.div`
+  display: flex;
+  align-items: center
 `
