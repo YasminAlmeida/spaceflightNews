@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
   display: flex;
   align-items: center;
   justify-content: space-between;
