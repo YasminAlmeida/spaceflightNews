@@ -6,7 +6,8 @@ import Loading from '../../components/loading'
 
 import { api } from '../../services/api'
 import { interfaceArticle } from '../../types/typesInterface'
-const PageNews = () => {
+
+const NewPage = () => {
   const [loading, setLoading] = useState(false)
   const [limit, setLimit] = useState<number>(15)
   const [articles, setArticles] = useState<interfaceArticle[]>([])
@@ -37,4 +38,4 @@ const PageNews = () => {
     </S.NewsContainer>
   )
 }
-export default PageNews
+export default NewPage

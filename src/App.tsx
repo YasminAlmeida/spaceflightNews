@@ -1,15 +1,17 @@
-import Header from './components/header'
-import PageNews from './view/pageNews'
+// import Header from './components/header'
+// import NewPage from './view/newsPage'
+import RoutesList from './routes'
+
 import * as S from './styles/styleApi'
 import GlobalStyle from './styles/globalstyle'
-const App = ()=> {
+
+const App = () => {
   return (
     <S.Container>
       <GlobalStyle />
-      <Header />
-      <PageNews />
+      <RoutesList />
     </S.Container>
-  );
+  )
 }
 
-export default App;
+export default App
